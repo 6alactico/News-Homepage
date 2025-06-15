@@ -9,13 +9,17 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="/assets/images/logo.svg" alt="Logo">
-      <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g>
-      </svg>
+  <div class="container flex-container">
+    <header class="header flex-container">
+      <div class="logo-img">
+        <img src="/assets/images/logo.svg" alt="Logo" style="width: 3rem;">
+      </div>
+      <div class="menu-icon">
+        <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g>
+        </svg>
+      </div>
       <nav aria-label="Main navigation">
-        <ul>
+        <ul class="nav-links">
           <li><a href="">Home</a></li>
           <li><a href="">New</a></li>
           <li><a href="">Popular</a></li>
@@ -24,8 +28,9 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <article>
+      <article class="featured-news flex-container">
         <picture>
           <source srcset="/assets/images/image-web-3-desktop.jpg" media="(min-width: 48rem)">
           <img src="/assets/images/image-web-3-mobile.jpg" alt="Illustration of futuristic technology" style="width: 100%;">
@@ -35,51 +40,57 @@
           We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
           But is it really fulfilling its promise?
         </p>
-        <a  class="read-more-btn" href="">Read more</a>
+        <a class="read-more-btn" href="">Read more</a>
       </article>
 
-      <section class="latest-news" role="region" aria-labelledby="new-heading">
+      <section class="latest-news flex-container" aria-labelledby="new-heading">
         <h2 id="new-heading">New</h2>
-        <article class="news-item">
-          <h3>Hydrogen VS Electric Cars</h3>
+        <article class="latest-item flex-container">
+          <h3 class="latest-heading">Hydrogen VS Electric Cars</h3>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </article>
         <hr>
-        <article class="news-item">
-          <h3>The Downsides of AI Artistry</h3>
+        <article class="latest-item flex-container">
+          <h3 class="latest-heading">The Downsides of AI Artistry</h3>
           <p>What are the possible adverse effects of on-demand AI image generation?</p>
         </article>
         <hr>
-        <article class="news-item">
-          <h3>Is VC Funding Drying Up?</h3>
+        <article class="latest-item flex-container">
+          <h3 class="latest-heading">Is VC Funding Drying Up?</h3>
           <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </article>
       </section>
     
-      <section class="top-news" role="region" aria-label="Top news">
-        <article class="news-card">
+      <section class="top-news flex-container" aria-label="Top news">
+        <article class="top-item flex-container">
           <div class="card-image">
             <img src="/assets/images/image-retro-pcs.jpg" alt="Retro PC on desk">
           </div>
-            <span class="card-number" aria-hidden="true">01</span>
-            <h3>Reviving Retro PCs</h3>
-            <p>What happens when old PCs are given modern upgrades?</p>
+            <div class="top-content flex-container">
+              <span class="card-number" aria-hidden="true">01</span>
+              <h3 class="top-heading">Reviving Retro PCs</h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
         </article>
-        <article class="news-card">
+        <article class="top-item flex-container">
           <div class="card-image">
             <img src="/assets/images/image-top-laptops.jpg" alt="PC keyboard">
           </div>
-            <span class="card-number" aria-hidden="true">02</span>
-            <h3>Top 10 Laptops of 2022</h3>
-            <p>Our best picks for various needs and budgets.</p>
+            <div class="top-content flex-container">
+              <span class="card-number" aria-hidden="true">02</span>
+              <h3 class="top-heading">Top 10 Laptops of 2022</h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
         </article>
-        <article class="news-card">
+        <article class="top-item flex-container">
           <div class="card-image">
             <img src="/assets/images/image-gaming-growth.jpg" alt="Gaming controller">
           </div>
+          <div class="top-content flex-container">
             <span class="card-number" aria-hidden="true">03</span>
-            <h3>The Growth of Gaming</h3>
+            <h3 class="top-heading">The Growth of Gaming</h3>
             <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
         </article>
       </section>
     </main>
