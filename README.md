@@ -1,6 +1,6 @@
 <table align="center">
   <tr>
-    <td><img src="design/mobile-design.jpg" width="375" alt="Mobile view"></td>
+    <td><img src="design/mobile-design.jpg" width="375" height="875" alt="Mobile view"></td>
     <td><img src="design/mobile-menu.jpg" width="375" alt="Mobile menu"></td>
   </tr>
   <tr>
