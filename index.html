@@ -1,105 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles/styles.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Inter:normal,400,700,800;" rel="stylesheet">
-  <script src="script.js" defer></script>
-  <title>Frontend Mentor | News homepage</title>
-</head>
-<body>
-  <div class="container flex-container">
-    <header class="header flex-container">
-      <div class="logo">
-        <img src="/assets/images/logo.svg" alt="Logo">
-      </div>
-      <button id="icon-menu" type="button" aria-label="Open menu">
-        <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g>
-        </svg>
-      </button>
-
-      <nav aria-label="Main navigation" class="flex-container">
-      <button id="icon-menu-close" type="button" aria-label="Close menu">
-        <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg>
-      </button>
-        <ul class="nav-links flex-container">
-          <li><a href="">Home</a></li>
-          <li><a href="">New</a></li>
-          <li><a href="">Popular</a></li>
-          <li><a href="">Trending</a></li>
-          <li><a href="">Categories</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <article class="featured-news flex-container">
-        <picture>
-          <source srcset="/assets/images/image-web-3-desktop.jpg" media="(min-width: 48rem)">
-          <img src="/assets/images/image-web-3-mobile.jpg" alt="Illustration of futuristic technology" style="width: 100%;">
-        </picture>
-        <div class="divider flex-container">
-          <h1>The Bright Future of Web 3.0?</h1>
-          <p class="featured-p">
-            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-            But is it really fulfilling its promise?
-            <a class="read-more-btn" href="">Read more</a>
-          </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:normal,400,700,800;"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="container flex-container">
+      <header class="header flex-container">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Logo"/>
         </div>
-      </article>
+        <button id="icon-menu" type="button" aria-label="Open menu">
+          <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/>
+              <path d="M0 0h40v3H0z"/>
+            </g>
+          </svg>
+        </button>
 
-      <section class="latest-news flex-container" aria-labelledby="new-heading">
-        <h2 id="new-heading">New</h2>
-        <article class="latest-item flex-container">
-          <h3 class="latest-heading"><a href="">Hydrogen VS Electric Cars</a></h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </article>
-        <hr>
-        <article class="latest-item flex-container">
-          <h3 class="latest-heading"><a href="">The Downsides of AI Artistry</a></h3>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </article>
-        <hr>
-        <article class="latest-item flex-container">
-          <h3 class="latest-heading"><a href="">Is VC Funding Drying Up?</a></h3>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </article>
-      </section>
-    
-      <section class="top-news flex-container" aria-label="Top news">
-        <article class="top-item flex-container">
-          <div class="top-image">
-            <img src="/assets/images/image-retro-pcs.jpg" alt="Retro PC on desk">
+        <nav aria-label="Main navigation" class="flex-container">
+          <button id="icon-menu-close" type="button" aria-label="Close menu">
+            <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#00001A" fill-rule="evenodd">
+                <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+                <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+              </g>
+            </svg>
+          </button>
+          <ul class="nav-links flex-container">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <article class="featured-news flex-container">
+          <picture>
+            <source
+              srcset="images/image-web-3-desktop.jpg"
+              media="(min-width: 48rem)"/>
+            <img src="images/image-web-3-mobile.jpg" alt="Illustration of futuristic technology"/>
+          </picture>
+          <div class="divider flex-container">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <p class="featured-p">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+              <a class="read-more-btn" href="#">Read more</a>
+            </p>
           </div>
+        </article>
+
+        <section class="latest-news flex-container" aria-labelledby="new-heading">
+          <h2 id="new-heading">New</h2>
+          <article class="latest-item flex-container">
+            <h3 class="latest-heading"><a href="">Hydrogen VS Electric Cars</a></h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+
+          <hr/>
+
+          <article class="latest-item flex-container">
+            <h3 class="latest-heading"><a href="">The Downsides of AI Artistry</a></h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </article>
+
+          <hr/>
+
+          <article class="latest-item flex-container">
+            <h3 class="latest-heading"><a href="">Is VC Funding Drying Up?</a></h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </article>
+        </section>
+
+        <section class="top-news flex-container" aria-label="Top news">
+          <article class="top-item flex-container">
+            <div class="top-image"><img src="images/image-retro-pcs.jpg" alt="Retro PC on desk"/></div>
             <div class="top-content flex-container">
               <span class="card-number" aria-hidden="true">01</span>
               <h3 class="top-heading"><a href="">Reviving Retro PCs</a></h3>
               <p>What happens when old PCs are given modern upgrades?</p>
             </div>
-        </article>
-        <article class="top-item flex-container">
-          <div class="top-image">
-            <img src="/assets/images/image-top-laptops.jpg" alt="PC keyboard">
-          </div>
+          </article>
+
+          <article class="top-item flex-container">
+            <div class="top-image"><img src="images/image-top-laptops.jpg" alt="PC keyboard"/></div>
             <div class="top-content flex-container">
               <span class="card-number" aria-hidden="true">02</span>
               <h3 class="top-heading"><a href="">Top 10 Laptops of 2022</a></h3>
               <p>Our best picks for various needs and budgets.</p>
             </div>
-        </article>
-        <article class="top-item flex-container">
-          <div class="top-image">
-            <img src="/assets/images/image-gaming-growth.jpg" alt="Gaming controller">
-          </div>
-          <div class="top-content flex-container">
-            <span class="card-number" aria-hidden="true">03</span>
-            <h3 class="top-heading"><a href="">The Growth of Gaming</a></h3>
-            <p>How the pandemic has sparked fresh opportunities.</p>
-          </div>
-        </article>
-      </section>
-    </main>
-  </div>
-</body>
+          </article>
+
+          <article class="top-item flex-container">
+            <div class="top-image"><img src="images/image-gaming-growth.jpg" alt="Gaming controller"/></div>
+            <div class="top-content flex-container">
+              <span class="card-number" aria-hidden="true">03</span>
+              <h3 class="top-heading"><a href="">The Growth of Gaming</a></h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

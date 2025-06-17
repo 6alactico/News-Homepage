@@ -47,6 +47,11 @@ body {
   opacity: 1;
 }
 
+img {
+  height: auto;
+  width: 100%;
+}
+
 /*-- HEADER --*/
 .header {
   align-items: center;
@@ -55,7 +60,6 @@ body {
   position: relative;
 }
 .header .logo img {
-  height: auto;
   width: clamp(3rem, 10vw, 3.75rem);
 }
 
@@ -85,8 +89,8 @@ nav {
 }
 
 #icon-menu-close {
-  margin-block-start: 0.875rem;
   align-self: center;
+  margin-block-start: 0.875rem;
   margin-block-end: 5rem;
 }
 
@@ -181,7 +185,6 @@ p {
 }
 .top-news .top-item img {
   width: 6.25rem;
-  height: auto;
 }
 
 .top-content {
