@@ -143,7 +143,7 @@ p {
 .latest-news {
   background-color: var(--veryDarkBlue);
   gap: 1rem;
-  padding: clamp(0.5rem, 2vw + 2rem, 1.5rem) 1.5rem;
+  padding: 1.5rem clamp(0.5rem, 1vw + 0.875rem, 1.25rem);
 }
 .latest-news p {
   color: var(--grayishBlue);
@@ -179,12 +179,9 @@ p {
   gap: 1.5rem;
   width: 100%;
 }
-.top-news .top-item .top-image {
-  height: auto;
-}
 .top-news .top-item img {
   width: 6.25rem;
-  height: 100%;
+  height: auto;
 }
 
 .top-content {
@@ -243,7 +240,7 @@ nav.active {
     gap: 2.5rem;
   }
   nav .nav-links a {
-    color: var(--grayishBlue);
+    color: var(--darkGrayishBlue);
   }
   nav .nav-links a:hover {
     color: var(--softRed);
